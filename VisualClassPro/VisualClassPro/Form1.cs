@@ -19,7 +19,8 @@ namespace VisualClassPro
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            var formPopup = new Form();
+            formPopup.Show(this);
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e) //I don't know what the fuck is supposed to happen here
