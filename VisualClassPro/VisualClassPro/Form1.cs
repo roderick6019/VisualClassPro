@@ -16,5 +16,15 @@ namespace VisualClassPro
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e) //I don't know what the fuck is supposed to happen here
+        {
+
+        }
     }
 }
