@@ -34,7 +34,7 @@
             this.ListButton = new System.Windows.Forms.Button();
             this.AnalysisButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PathLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.panel1.SuspendLayout();
@@ -82,17 +82,17 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.PathLabel);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // label1
+            // PathLabel
             // 
-            this.label1.BackColor = System.Drawing.Color.SteelBlue;
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.PathLabel.BackColor = System.Drawing.Color.SteelBlue;
+            resources.ApplyResources(this.PathLabel, "PathLabel");
+            this.PathLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.PathLabel.Name = "PathLabel";
+            this.PathLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -129,7 +129,7 @@
         private System.Windows.Forms.Button ListButton;
         private System.Windows.Forms.Button AnalysisButton;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label PathLabel;
         private System.Windows.Forms.Panel panel2;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
     }

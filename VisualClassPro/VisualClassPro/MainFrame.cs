@@ -15,17 +15,23 @@ namespace VisualClassPro
         public Main()
         {
             InitializeComponent();
-
-
         }
 
+        //Summary Frame button
         private void button1_Click(object sender, EventArgs e)
         {
-            SummaryFrame summaryFrameCaller = new SummaryFrame();
-            summaryFrameCaller.Show(this);
+            SummaryFrame summaryFrame = SummaryFrame.GetInstance();
+
+            if (!summaryFrame.Visible && Application.OpenForms.Count == 1)
+            {
+                summaryFrame.Show();
+            }
+            else {
+                summaryFrame.BringToFront();
+            }
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e) //I don't know what the fuck is supposed to happen here
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -38,15 +44,29 @@ namespace VisualClassPro
         //once analysis button is clicked, analysis form will open 
         private void AnalysisButton_Click(object sender, EventArgs e)
         {
-            AnalysisFrame analysisFrameCaller = new AnalysisFrame();
-            analysisFrameCaller.Show(this);
+            AnalysisFrame analysisFrame = AnalysisFrame.GetInstance();
+
+            if (!analysisFrame.Visible && Application.OpenForms.Count == 1) //checking count will allow for just one additional form to be opened. This help preven cluttering of forms
+            {
+                analysisFrame.Show();
+            }
+            else {
+                analysisFrame.BringToFront();
+            }
         }
 
-        //Once button is clicked, list form will be called
+        //Once button is clicked, list form will be called. 
         private void ListButton_Click(object sender, EventArgs e) 
         {
-            ListFrame listFrameCaller = new ListFrame();
-            listFrameCaller.Show(this);
+            ListFrame listFrame = ListFrame.GetInstance();
+
+            if (!listFrame.Visible && Application.OpenForms.Count == 1) //checking if form is already open. If other instance is opened, form will just be called to front instead.
+            {
+                listFrame.Show();
+            }
+            else {
+                listFrame.BringToFront();
+            }
         }
     }
 }
