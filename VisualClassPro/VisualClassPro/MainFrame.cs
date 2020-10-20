@@ -64,7 +64,7 @@ namespace VisualClassPro
         {
             ListFrame listFrame = ListFrame.GetInstance();
 
-            if (!listFrame.Visible && Application.OpenForms.Count == 1) //checking if form is already open. If other instance is opened, form will just be called to front instead.
+            if (!listFrame.Visible) //&& !Application.OpenForms.Equals(listFrame)) //checking if form is already open. If other instance is opened, form will just be called to front instead.
             {
                 listFrame.Show();
             }
