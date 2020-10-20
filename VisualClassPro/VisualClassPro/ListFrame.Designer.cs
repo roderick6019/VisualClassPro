@@ -28,52 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtfilePath = new System.Windows.Forms.TextBox();
             this.FileInstructionLabel = new System.Windows.Forms.Label();
-            this.fileListBox = new System.Windows.Forms.ListBox();
+            this.browseButton = new System.Windows.Forms.Button();
+            this.fileBrowser = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtfilePath
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(377, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtfilePath.Location = new System.Drawing.Point(16, 37);
+            this.txtfilePath.Name = "txtfilePath";
+            this.txtfilePath.ReadOnly = true;
+            this.txtfilePath.Size = new System.Drawing.Size(691, 20);
+            this.txtfilePath.TabIndex = 0;
+            this.txtfilePath.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FileInstructionLabel
             // 
             this.FileInstructionLabel.AutoSize = true;
             this.FileInstructionLabel.Font = new System.Drawing.Font("Open Sans Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FileInstructionLabel.ForeColor = System.Drawing.Color.White;
+            this.FileInstructionLabel.ForeColor = System.Drawing.Color.Black;
             this.FileInstructionLabel.Location = new System.Drawing.Point(13, 9);
             this.FileInstructionLabel.Name = "FileInstructionLabel";
-            this.FileInstructionLabel.Size = new System.Drawing.Size(311, 15);
+            this.FileInstructionLabel.Size = new System.Drawing.Size(308, 15);
             this.FileInstructionLabel.TabIndex = 1;
-            this.FileInstructionLabel.Text = "Please Enter the file path were all you CSV files are stored:\r\n";
+            this.FileInstructionLabel.Text = "Use the \"Browse\" button to selected your work directory.";
             // 
-            // fileListBox
+            // browseButton
             // 
-            this.fileListBox.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fileListBox.FormattingEnabled = true;
-            this.fileListBox.ItemHeight = 22;
-            this.fileListBox.Items.AddRange(new object[] {
-            "Item 1",
-            "Item 2"});
-            this.fileListBox.Location = new System.Drawing.Point(16, 100);
-            this.fileListBox.Name = "fileListBox";
-            this.fileListBox.Size = new System.Drawing.Size(759, 312);
-            this.fileListBox.TabIndex = 2;
+            this.browseButton.Location = new System.Drawing.Point(713, 34);
+            this.browseButton.Name = "browseButton";
+            this.browseButton.Size = new System.Drawing.Size(75, 23);
+            this.browseButton.TabIndex = 3;
+            this.browseButton.Text = "Browse";
+            this.browseButton.UseVisualStyleBackColor = true;
+            this.browseButton.Click += new System.EventHandler(this.browseButton_Click);
+            // 
+            // fileBrowser
+            // 
+            this.fileBrowser.Location = new System.Drawing.Point(16, 78);
+            this.fileBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.fileBrowser.Name = "fileBrowser";
+            this.fileBrowser.Size = new System.Drawing.Size(772, 360);
+            this.fileBrowser.TabIndex = 4;
+            this.fileBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.fileBrowser_DocumentCompleted);
             // 
             // ListFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.fileListBox);
+            this.Controls.Add(this.fileBrowser);
+            this.Controls.Add(this.browseButton);
             this.Controls.Add(this.FileInstructionLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtfilePath);
             this.Name = "ListFrame";
             this.Text = "ListFrame";
             this.Load += new System.EventHandler(this.ListFrame_Load);
@@ -84,8 +93,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtfilePath;
         private System.Windows.Forms.Label FileInstructionLabel;
-        private System.Windows.Forms.ListBox fileListBox;
+        private System.Windows.Forms.Button browseButton;
+        private System.Windows.Forms.WebBrowser fileBrowser;
     }
 }

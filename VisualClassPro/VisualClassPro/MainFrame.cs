@@ -12,9 +12,13 @@ namespace VisualClassPro
 {
     public partial class Main : Form
     {
+
+        private string path;
+
         public Main()
         {
             InitializeComponent();
+            path = ListFrame.GetInstance().GetSelectedFilePath();
         }
 
         //Summary Frame button
@@ -38,7 +42,7 @@ namespace VisualClassPro
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         //once analysis button is clicked, analysis form will open 
@@ -67,6 +71,11 @@ namespace VisualClassPro
             else {
                 listFrame.BringToFront();
             }
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            PathLabel.Text = path;
         }
     }
 }
