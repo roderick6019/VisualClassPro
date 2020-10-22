@@ -12,26 +12,17 @@ namespace VisualClassPro
 {
     public partial class Main : Form
     {
-
-        private string path;
-
-        public Main()
-        {
+        
+        public Main() {
             InitializeComponent();
-            path = ListFrame.GetInstance().GetSelectedFilePath();
         }
 
         //Summary Frame button
         private void button1_Click(object sender, EventArgs e)
         {
-            SummaryFrame summaryFrame = SummaryFrame.GetInstance();
-
-            if (!summaryFrame.Visible && Application.OpenForms.Count == 1)
+            if (Application.OpenForms.Count == 1)
             {
-                summaryFrame.Show();
-            }
-            else {
-                summaryFrame.BringToFront();
+                new SummaryFrame().Show();
             }
         }
 
@@ -40,7 +31,7 @@ namespace VisualClassPro
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void label1_Click(object sender, EventArgs e)
         {
             
         }
@@ -48,34 +39,27 @@ namespace VisualClassPro
         //once analysis button is clicked, analysis form will open 
         private void AnalysisButton_Click(object sender, EventArgs e)
         {
-            AnalysisFrame analysisFrame = AnalysisFrame.GetInstance();
-
-            if (!analysisFrame.Visible && Application.OpenForms.Count == 1) //checking count will allow for just one additional form to be opened. This help preven cluttering of forms
+            if (Application.OpenForms.Count == 1) //checking count will allow for just one additional form to be opened. This help preven cluttering of forms
             {
-                analysisFrame.Show();
-            }
-            else {
-                analysisFrame.BringToFront();
+                new AnalysisFrame().Show();
             }
         }
 
         //Once button is clicked, list form will be called. 
         private void ListButton_Click(object sender, EventArgs e) 
         {
-            ListFrame listFrame = ListFrame.GetInstance();
-
-            if (!listFrame.Visible) //&& !Application.OpenForms.Equals(listFrame)) //checking if form is already open. If other instance is opened, form will just be called to front instead.
-            {
-                listFrame.Show();
-            }
-            else {
-                listFrame.BringToFront();
-            }
+            if (Application.OpenForms.Count == 1) {
+                new ListFrame().Show(); //Create a new instance every time form is opened    
+            }            
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            PathLabel.Text = path;
+            
+        }
+
+        public void SetPathLabelValue(string value) {
+            
         }
     }
 }

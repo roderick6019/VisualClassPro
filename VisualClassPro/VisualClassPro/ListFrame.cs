@@ -14,20 +14,12 @@ namespace VisualClassPro
 {
     public partial class ListFrame : Form
     {
+        string[] files;
+        Manager manager;
 
-        public string selectedFilePath;
-        private static ListFrame _instance;
-
-        //Singleton ensuring only a single instance of a frame can be opened at a time
-        public static ListFrame GetInstance() {
-
-            if (_instance == null) _instance = new ListFrame();
-            return _instance;
-        }
-
-        public ListFrame()
-        {
+        public ListFrame() {
             InitializeComponent();
+            manager = new Manager();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -35,16 +27,20 @@ namespace VisualClassPro
 
         }
 
-        private void browseButton_Click(object sender, EventArgs e)
+        private void browseButton_Click(object sender, EventArgs e) 
         {
+
             using (FolderBrowserDialog fbd = new FolderBrowserDialog() { Description = "Select Work Directory" }) {
 
                 if (fbd.ShowDialog() == DialogResult.OK) {
+
+                    files = Directory.GetFiles(fbd.SelectedPath);
                     fileBrowser.Url = new Uri(fbd.SelectedPath);
                     txtfilePath.Text = fbd.SelectedPath;
-                    selectedFilePath = fbd.SelectedPath;
                 }
             }
+
+
         }
 
         private void fileBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -57,9 +53,32 @@ namespace VisualClassPro
 
 
         }
-
-        public string GetSelectedFilePath() {
-            return selectedFilePath;
+        
+        private void frontBtn_Click(object sender, EventArgs e)
+        {
+            if (fileBrowser.CanGoForward) {
+                fileBrowser.GoForward();
+            }
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            if (fileBrowser.CanGoBack) {
+                fileBrowser.GoBack();
+            }
+        }
+
+        private void selectFilebtn_Click(object sender, EventArgs e)
+        {
+            //try catch in case user selects file without browsing first
+            try
+            {
+                manager.SetFilePath(files[0]);
+            }
+            catch (Exception f) {
+                MessageBox.Show("Please select a file");
+            }
+               
+        }   
     }
 }

@@ -34,9 +34,9 @@
             this.ListButton = new System.Windows.Forms.Button();
             this.AnalysisButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.PathLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.txtPathLabel = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -81,18 +81,10 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel3.Controls.Add(this.PathLabel);
+            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel3.Controls.Add(this.txtPathLabel);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            // 
-            // PathLabel
-            // 
-            this.PathLabel.BackColor = System.Drawing.Color.SteelBlue;
-            resources.ApplyResources(this.PathLabel, "PathLabel");
-            this.PathLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.PathLabel.Name = "PathLabel";
-            this.PathLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -106,6 +98,15 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
+            // txtPathLabel
+            // 
+            this.txtPathLabel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.txtPathLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txtPathLabel, "txtPathLabel");
+            this.txtPathLabel.ForeColor = System.Drawing.SystemColors.Info;
+            this.txtPathLabel.Name = "txtPathLabel";
+            this.txtPathLabel.ReadOnly = true;
+            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
@@ -117,6 +118,7 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
@@ -130,9 +132,9 @@
         private System.Windows.Forms.Button ListButton;
         private System.Windows.Forms.Button AnalysisButton;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label PathLabel;
         private System.Windows.Forms.Panel panel2;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
+        public System.Windows.Forms.TextBox txtPathLabel;
     }
 }
 
