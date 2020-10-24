@@ -173,10 +173,13 @@
     <value>Flat</value>
   </data>
   <data name="SummaryButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 350</value>
+    <value>9, 539</value>
+  </data>
+  <data name="SummaryButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="SummaryButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 41</value>
+    <value>47, 62</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="SummaryButton.TabIndex" type="System.Int32, mscorlib">
@@ -194,66 +197,66 @@
   <data name="&gt;&gt;SummaryButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;ListButton.Name" xml:space="preserve">
-    <value>ListButton</value>
-  </data>
-  <data name="&gt;&gt;ListButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ListButton.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;ListButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;AnalysisButton.Name" xml:space="preserve">
-    <value>AnalysisButton</value>
-  </data>
-  <data name="&gt;&gt;AnalysisButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AnalysisButton.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;AnalysisButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 403</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="ListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAYAAAA+VemSAAAABGdBTUEAALGPC/xhBQAAAfBJREFUeF7t
-        3cENgEAAAsHrv2ltAOODBB/OJNsADXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAF5c0odRSqNKqyilUaVVlNKo0ipKaVRpFaU0qrSKUhpVWkUpjSqtopRG
-        lVZRSqNKqyilUaVVlNKo0ipKaVRpFaU0qrSKUhpVWkUpjSqtopRGlVZRSqNKqyilUaVVlNKo0ioAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAn0uXj9IqSmlUaRWlNKq0ilIaVVpFKY0qraKURpVWUUqjSqso
-        pVGlVZTSqNIqSmlUaRWlNKq0ilIaVVpFKY0qraKURpVWUUqjSqsopVGlVZTSqNIqSmlUaRWlNKq0ilIa
-        VVoFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8HPp8lFaRSmNKq2ilEaVVlFKo0qrKKVRpVWU0qjS
-        KkppVGkVpTSqtIpSGlVaRSmNKq2ilEaVVlFKo0qrKKVRpVWU0qjSKkppVGkVpTSqtIpSGlVaRSmNKq2i
-        lEaVVlFKo0qrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAenHMDDsNcrMCjE6AAAAAASUVORK5CYII=
+        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
 </value>
   </data>
   <data name="ListButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -263,10 +266,13 @@
     <value>Flat</value>
   </data>
   <data name="ListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>5, 5</value>
+  </data>
+  <data name="ListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="ListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 35</value>
+    <value>55, 48</value>
   </data>
   <data name="ListButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -326,11 +332,17 @@
   <data name="AnalysisButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="AnalysisButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="AnalysisButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 309</value>
+    <value>4, 477</value>
+  </data>
+  <data name="AnalysisButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="AnalysisButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 35</value>
+    <value>60, 52</value>
   </data>
   <data name="AnalysisButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -347,29 +359,57 @@
   <data name="&gt;&gt;AnalysisButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 620</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="txtPathLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="txtPathLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 3</value>
+    <value>12, 0</value>
+  </data>
+  <data name="txtPathLabel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
   <data name="txtPathLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>740, 19</value>
+    <value>1109, 25</value>
   </data>
   <data name="txtPathLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="txtPathLabel.Text" xml:space="preserve">
-    <value>What the fuck</value>
-  </data>
-  <data name="txtPathLabel.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
+    <value>label
+</value>
   </data>
   <data name="&gt;&gt;txtPathLabel.Name" xml:space="preserve">
     <value>txtPathLabel</value>
   </data>
   <data name="&gt;&gt;txtPathLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtPathLabel.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -381,10 +421,13 @@
     <value>Bottom</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 381</value>
+    <value>0, 586</value>
+  </data>
+  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>749, 22</value>
+    <value>1124, 34</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1201,10 +1244,13 @@
     <value>Fill</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 0</value>
+    <value>64, 0</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>749, 403</value>
+    <value>1124, 620</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1231,10 +1277,13 @@
     <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>792, 403</value>
+    <value>1188, 620</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Main</value>

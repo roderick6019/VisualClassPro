@@ -12,8 +12,13 @@ namespace VisualClassPro
 {
     public partial class Main : Form
     {
-        
+
+        string fileName;
+        bool showMessage;
+
         public Main() {
+            fileName = "";
+            showMessage = true;
             InitializeComponent();
         }
 
@@ -31,11 +36,6 @@ namespace VisualClassPro
 
         }
 
-        public void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         //once analysis button is clicked, analysis form will open 
         private void AnalysisButton_Click(object sender, EventArgs e)
         {
@@ -48,9 +48,21 @@ namespace VisualClassPro
         //Once button is clicked, list form will be called. 
         private void ListButton_Click(object sender, EventArgs e) 
         {
-            if (Application.OpenForms.Count == 1) {
-                new ListFrame().Show(); //Create a new instance every time form is opened    
-            }            
+            if (showMessage == true) {
+                MessageBox.Show("It is required that all files for sections are stored in the same directory");
+                showMessage = false;
+            }
+            
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+
+
+                fileName = ofd.FileName; MessageBox.Show(fileName);
+                txtPathLabel.Text = fileName;
+            }
+
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -60,6 +72,10 @@ namespace VisualClassPro
 
         public void SetPathLabelValue(string value) {
             
+        }
+
+        private void txtPathLabel_Click(object sender, EventArgs e) {
+
         }
     }
 }
