@@ -12,13 +12,12 @@ namespace VisualClassPro
 {
     public partial class Main : Form
     {
-
-        string fileName;
+        public string filePath;
         bool showMessage;
 
         public Main() {
-            fileName = "";
-            showMessage = true;
+            filePath = string.Empty; //initialize fileName as empty string
+            showMessage = true; //used to show reminder that all course csv files must be in the same directory
             InitializeComponent();
         }
 
@@ -49,20 +48,22 @@ namespace VisualClassPro
         private void ListButton_Click(object sender, EventArgs e) 
         {
             if (showMessage == true) {
-                MessageBox.Show("It is required that all files for sections are stored in the same directory");
+                MessageBox.Show("It is required that all files for sections are stored in the same directory in order for the program to function correctly.", "Warning" , MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 showMessage = false;
             }
             
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "CSV|*.csv"; //filtering out all files except csv file
+            ofd.RestoreDirectory = true;
 
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-
-
-                fileName = ofd.FileName; MessageBox.Show(fileName);
-                txtPathLabel.Text = fileName;
+                filePath = ofd.FileName;
+                //Console.WriteLine(fileName);
+                txtPathLabel.Text = GetFileName();//fileName;
+                MessageBox.Show(filePath);
+                GetAverageGPA();
             }
-
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -70,12 +71,55 @@ namespace VisualClassPro
             
         }
 
-        public void SetPathLabelValue(string value) {
-            
-        }
-
         private void txtPathLabel_Click(object sender, EventArgs e) {
 
+        }
+
+        //Function returning array of string with rows of input CSV files
+        public string[] ReadCSVFile() {
+
+            string[] lines = { };
+
+            try { 
+                lines = System.IO.File.ReadAllLines(filePath);
+
+                foreach (string line in lines)
+                {
+                    string[] columns = line.Split(','); //separate by commas
+                    foreach (string column in columns)
+                    {
+                        string[] items = column.Split(','); //TESTING: Just to see what function picks up
+                        
+                        //Console.WriteLine(column);
+                    }
+                }
+            }
+            catch (Exception e) {
+                MessageBox.Show("Error encountered: " + e.ToString());
+            }
+
+            return lines;
+
+            /*
+            foreach (string item in lines) {
+                Console.WriteLine(item);
+            }*/
+        }
+
+        //since path is returned and are too long for txtPathLabel, file name will be returned 
+        public string GetFileName()
+        {
+            string[] directories = filePath.Split('\\');
+
+            return directories[directories.Length - 1];
+        }
+
+        public void GetAverageGPA() {
+            string[] grades = ReadCSVFile();
+
+            foreach (string row in grades) {
+                Console.WriteLine(row);
+            }
         }
     }
 }

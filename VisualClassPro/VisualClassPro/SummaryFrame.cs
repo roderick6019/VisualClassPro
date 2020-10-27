@@ -16,5 +16,15 @@ namespace VisualClassPro
         {
             InitializeComponent();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void SummaryFrame_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

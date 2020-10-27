@@ -11,22 +11,22 @@ namespace VisualClassPro
     class CSVManager
     {
         Main mainFrame;
-
+        
         public CSVManager() {
             mainFrame = new Main();
         }
         
         //Function reading csv files 
-        private void ReadCSV(string filePath) {
+        /*public void ReadCSV() {
 
-            string[] lines = System.IO.File.ReadAllLines(filePath);
+            string[] lines = System.IO.File.ReadAllLines(mainFrame.GetFilePath());
 
             foreach (string line in lines) {
                 string[] columns = line.Split(','); //separate by commas
                 foreach (string column in columns) {
-                    Console.WriteLine(column); //TESTING: Just to see what function picks up
+                    string[] items = column.Split(','); //TESTING: Just to see what function picks up
                 }
             }
-        }
+        }*/
     }
 }
