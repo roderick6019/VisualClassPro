@@ -28,25 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.testSummaryList = new System.Windows.Forms.ListBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // testSummaryList
+            // listView1
             // 
-            this.testSummaryList.FormattingEnabled = true;
-            this.testSummaryList.ItemHeight = 20;
-            this.testSummaryList.Location = new System.Drawing.Point(12, 12);
-            this.testSummaryList.Name = "testSummaryList";
-            this.testSummaryList.Size = new System.Drawing.Size(1033, 484);
-            this.testSummaryList.TabIndex = 0;
-            this.testSummaryList.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(12, 12);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(681, 311);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // SummaryFrame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 515);
-            this.Controls.Add(this.testSummaryList);
+            this.ClientSize = new System.Drawing.Size(705, 335);
+            this.Controls.Add(this.listView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SummaryFrame";
             this.Text = "SummaryFrame";
             this.Load += new System.EventHandler(this.SummaryFrame_Load);
@@ -56,6 +59,6 @@
 
         #endregion
 
-        public System.Windows.Forms.ListBox testSummaryList;
+        private System.Windows.Forms.ListView listView1;
     }
 }

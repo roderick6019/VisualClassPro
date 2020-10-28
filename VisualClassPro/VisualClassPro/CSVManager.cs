@@ -10,23 +10,12 @@ namespace VisualClassPro
 {
     class CSVManager
     {
-        Main mainFrame;
+        List<string> sectionGrades;
         
         public CSVManager() {
-            mainFrame = new Main();
+            sectionGrades = new List<string>();
         }
         
-        //Function reading csv files 
-        /*public void ReadCSV() {
-
-            string[] lines = System.IO.File.ReadAllLines(mainFrame.GetFilePath());
-
-            foreach (string line in lines) {
-                string[] columns = line.Split(','); //separate by commas
-                foreach (string column in columns) {
-                    string[] items = column.Split(','); //TESTING: Just to see what function picks up
-                }
-            }
-        }*/
+        
     }
 }

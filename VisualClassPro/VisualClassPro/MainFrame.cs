@@ -62,7 +62,7 @@ namespace VisualClassPro
                 //Console.WriteLine(fileName);
                 txtPathLabel.Text = GetFileName();//fileName;
                 MessageBox.Show(filePath);
-                GetAverageGPA();
+                GetSectionGrades().ForEach(Console.WriteLine);
             }
         }
 
@@ -89,8 +89,6 @@ namespace VisualClassPro
                     foreach (string column in columns)
                     {
                         string[] items = column.Split(','); //TESTING: Just to see what function picks up
-                        
-                        //Console.WriteLine(column);
                     }
                 }
             }
@@ -99,27 +97,30 @@ namespace VisualClassPro
             }
 
             return lines;
-
-            /*
-            foreach (string item in lines) {
-                Console.WriteLine(item);
-            }*/
         }
 
         //since path is returned and are too long for txtPathLabel, file name will be returned 
         public string GetFileName()
         {
             string[] directories = filePath.Split('\\');
-
             return directories[directories.Length - 1];
         }
 
-        public void GetAverageGPA() {
-            string[] grades = ReadCSVFile();
+        //returns list of grades specificed by chosen file from open file dialog
+        public List<string> GetSectionGrades() {
+            string[] students = ReadCSVFile();
+            List<string> grades = new List<string>();
 
-            foreach (string row in grades) {
-                Console.WriteLine(row);
+            int rowCounter = 0; //used to ignore first row which consists of the name of the section
+            
+            foreach (string item in students) {
+                if (rowCounter > 0) {
+                    string[] studentItems = item.Split(',');
+                    grades.Add(studentItems[3]); //index in studentItems array which consists of grade 
+                }
+                rowCounter++;
             }
+            return grades;
         }
     }
 }
