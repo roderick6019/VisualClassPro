@@ -53,7 +53,7 @@ namespace VisualClassPro
             }
             
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "CSV|*.csv"; //filtering out all files except csv file
+            //ofd.Filter = "CSV|*.csv"; //filtering out all files except csv file
             ofd.RestoreDirectory = true;
 
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -62,7 +62,8 @@ namespace VisualClassPro
                 //Console.WriteLine(fileName);
                 txtPathLabel.Text = GetFileName();//fileName;
                 MessageBox.Show(filePath);
-                GetSectionGrades().ForEach(Console.WriteLine);
+                //GetSectionGrades().ForEach(Console.WriteLine);
+                ReadGRPFile().ForEach(Console.WriteLine);
             }
         }
 
@@ -121,6 +122,31 @@ namespace VisualClassPro
                 rowCounter++;
             }
             return grades;
+        }
+
+        //Function reading grp files which returns all sections to be compared
+        public List<string> ReadGRPFile() {
+            List<string> fileNames = new List<string>();
+            bool ignoreTitle = true;
+
+            try
+            {
+                string[] rows = System.IO.File.ReadAllLines(filePath);
+
+                foreach (string file_name in rows)
+                {
+                    if (!ignoreTitle) {
+                        fileNames.Add(file_name); //Add file names to list
+                    } 
+                }
+                
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error encountered: " + e.ToString());
+            }
+
+            return fileNames;
         }
     }
 }
