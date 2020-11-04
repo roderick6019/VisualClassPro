@@ -13,7 +13,7 @@ namespace VisualClassPro
     public partial class SummaryFrame : Form
     {
         public SummaryFrame()
-        {
+        {           
             InitializeComponent();
         }
 
@@ -24,7 +24,7 @@ namespace VisualClassPro
 
         private void SummaryFrame_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.statsList = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // listView1
+            // statsList
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.statsList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(681, 311);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.statsList.HideSelection = false;
+            this.statsList.Location = new System.Drawing.Point(18, 18);
+            this.statsList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.statsList.Name = "statsList";
+            this.statsList.Size = new System.Drawing.Size(1020, 476);
+            this.statsList.TabIndex = 0;
+            this.statsList.UseCompatibleStateImageBehavior = false;
             // 
             // SummaryFrame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 335);
-            this.Controls.Add(this.listView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(1058, 515);
+            this.Controls.Add(this.statsList);
             this.Name = "SummaryFrame";
             this.Text = "SummaryFrame";
             this.Load += new System.EventHandler(this.SummaryFrame_Load);
@@ -59,6 +59,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView statsList;
     }
 }

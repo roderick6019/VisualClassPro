@@ -401,10 +401,6 @@
   <data name="txtPathLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="txtPathLabel.Text" xml:space="preserve">
-    <value>label
-</value>
-  </data>
   <data name="&gt;&gt;txtPathLabel.Name" xml:space="preserve">
     <value>txtPathLabel</value>
   </data>
