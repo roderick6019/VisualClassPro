@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.SummaryButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSelectGRP = new System.Windows.Forms.Button();
             this.ListButton = new System.Windows.Forms.Button();
             this.AnalysisButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -55,11 +56,20 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.Controls.Add(this.btnSelectGRP);
             this.panel1.Controls.Add(this.ListButton);
             this.panel1.Controls.Add(this.AnalysisButton);
             this.panel1.Controls.Add(this.SummaryButton);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // btnSelectGRP
+            // 
+            resources.ApplyResources(this.btnSelectGRP, "btnSelectGRP");
+            this.btnSelectGRP.FlatAppearance.BorderSize = 0;
+            this.btnSelectGRP.Name = "btnSelectGRP";
+            this.btnSelectGRP.UseVisualStyleBackColor = true;
+            this.btnSelectGRP.Click += new System.EventHandler(this.btnSelectGRP_Click);
             // 
             // ListButton
             // 
@@ -132,6 +142,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Label txtPathLabel;
+        private System.Windows.Forms.Button btnSelectGRP;
     }
 }
 
