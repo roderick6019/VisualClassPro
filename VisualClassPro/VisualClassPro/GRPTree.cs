@@ -16,5 +16,15 @@ namespace VisualClassPro
         {
             InitializeComponent();
         }
+
+        private void GRPTree_Load(object sender, EventArgs e)
+        {
+            Main mainFrame = new Main();
+            List<string> fileNames = mainFrame.ReadGRPFile();
+
+            foreach (string s in fileNames) {
+                treeGRP.Nodes.Add(s);
+            }
+        }
     }
 }

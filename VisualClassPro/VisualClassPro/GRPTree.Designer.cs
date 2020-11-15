@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.treeGRP = new System.Windows.Forms.TreeView();
             this.instructionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // treeView1
+            // treeGRP
             // 
-            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.treeGRP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.treeView1.Location = new System.Drawing.Point(12, 41);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(258, 240);
-            this.treeView1.TabIndex = 0;
+            this.treeGRP.Location = new System.Drawing.Point(12, 41);
+            this.treeGRP.Name = "treeGRP";
+            this.treeGRP.Size = new System.Drawing.Size(258, 240);
+            this.treeGRP.TabIndex = 0;
             // 
             // instructionLabel
             // 
@@ -59,9 +59,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 291);
             this.Controls.Add(this.instructionLabel);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.treeGRP);
             this.Name = "GRPTree";
             this.Text = "GRPTree";
+            this.Load += new System.EventHandler(this.GRPTree_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView treeGRP;
         private System.Windows.Forms.Label instructionLabel;
     }
 }

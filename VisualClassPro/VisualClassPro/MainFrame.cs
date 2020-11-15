@@ -124,15 +124,14 @@ namespace VisualClassPro
         //returns list of grades specificed by chosen file from open file dialog
         public string[] GetSectionGrades(string path) {
             string[] students = ReadCSVFile(path);
-            //List<string> grades = new List<string>();
             string[] gradesTest = new string[students.Length];
 
             int rowCounter = 0; //used to ignore first row which consists of the name of the section
             
             foreach (string item in students) {
                 if (rowCounter > 0) {
+                    Console.WriteLine(item);
                     string[] studentItems = item.Split(',');
-                    //grades.Add(studentItems[3]); //index in studentItems array which consists of grade
                     gradesTest[rowCounter] = studentItems[3];
                 }
                 rowCounter++;
@@ -279,6 +278,13 @@ namespace VisualClassPro
                 
                 MessageBox.Show("Sections in " + GetFileName(grpFilePath) + ": \n" + GRPToString());
             }
+
+            //new GRPTree().Show();
+        }
+
+        private void treeBtn_Click(object sender, EventArgs e)
+        {
+            //new GRPTree().Show();
         }
     }
 }
