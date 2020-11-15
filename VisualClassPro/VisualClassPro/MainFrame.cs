@@ -17,6 +17,7 @@ namespace VisualClassPro
         private string grpFilePath;
         private double cumulativeGPA;
         private double overallStdev;
+        private double z;
         //static List<string> fileGroup;
 
         public Main() {
@@ -24,6 +25,7 @@ namespace VisualClassPro
             grpFilePath = string.Empty;
             cumulativeGPA = 0;
             overallStdev = 0;
+            z = 0; 
             InitializeComponent();
         }
 
@@ -50,7 +52,7 @@ namespace VisualClassPro
         {
             if (!(cumulativeGPA == 0) && filePath != string.Empty && grpFilePath != string.Empty)
             {
-                MessageBox.Show(GetFileName(filePath) + " GPA: " + CalculateGPA(GetSectionGrades(filePath)) + "\n" + "Cumulative GPA: " + cumulativeGPA + "\nStandard Deviation: " + overallStdev);
+                MessageBox.Show(GetFileName(filePath) + " GPA: " + CalculateGPA(GetSectionGrades(filePath)) + "\n" + "Cumulative GPA: " + Math.Round(cumulativeGPA,2) + "\nStandard Deviation: " + overallStdev + "\n" + ComputeZTest());
             }
             else {
                 MessageBox.Show("Please select a CSV file and GRP file to analyze", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -223,39 +225,11 @@ namespace VisualClassPro
             
             cumulativeGPA /= fileCount;
             overallStdev = StandardDeviation(stdevList);
-            //Console.WriteLine("Average amongst group: " + cumulativeGPA);
+            z = (CalculateGPA(GetSectionGrades(filePath)) - cumulativeGPA) / overallStdev;
 
-            /*foreach (string f in files) {
-                cumulativeGPA += CalculateGPA(ReadCSVFile(f));
-            }*/
-
-            //return files;
-            
-            /*List<string> fileInGroup = ReadGRPFile();
-            List<string> filesInGroup = new List<string>();
-
-            try
-            {
-                //foreach (string g in group) {
-                foreach (string d in Directory.GetDirectories(sDir))
-                {
-                    foreach (string f in Directory.GetFiles(d, "COMSC240_01.csv"))
-                    {
-                        
-                        filesInGroup.Add(f);
-                    }
-                    FindGroupFiles(d);
-                }
-                //}
-            }
-            catch (System.Exception exception) {
-                MessageBox.Show("Sections specified by the GRP file could not be loaded");
-            }
-
-            filesInGroup.ForEach(Console.WriteLine);
-            return filesInGroup;*/
         }
 
+        //Function calculation standard deviation of a given list (used to calculate stdev of selected group)
         private double StandardDeviation(List<double> numList) {
 
             double temp = 0;
@@ -268,6 +242,20 @@ namespace VisualClassPro
             temp /= (numList.Count);
             temp = Math.Sqrt(temp);
             return Math.Round(temp, 3);
+        }
+
+        //Function computing z-test and returning string messaging whether or not selected section is significantly different than overall section
+        private string ComputeZTest() {
+            string message = string.Empty;
+            if (z > 2 || z < -2)
+            {
+                message = GetFileName(filePath) + " is signifcantly different than " + GetFileName(grpFilePath + " with z-value of " + Math.Round(z,2));
+            }
+            else {
+                message = GetFileName(filePath) + " is not signifcantly different than " + GetFileName(grpFilePath + " with z-value of " + Math.Round(z, 2));
+            }
+
+            return message;
         }
 
         //Once button is pressed, file dialog will allow the user to select a grp file in order to start sections analysis
