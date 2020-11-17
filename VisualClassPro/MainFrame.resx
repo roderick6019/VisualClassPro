@@ -192,7 +192,31 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;SummaryButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
+  </data>
+  <data name="treeBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAWVJREFUWEft
+        lm1NBTEQRVcCEpCAA3AAEnAADkACDsABOAAH4AAcgAO4J3mT3DRNt293NuyPnuSEpH20s9PpxzQY7JST
+        w9/d8CKf5eaBXUgm+j34Ke+kT3wlo/+dhq14kjFR6bc8k3Arve9BpsOgPklNgjqVcC29L9pT4Mt98JZk
+        MXiTtfbV9GTHjXrarJb8S3uk8ANvT2N3AS1dMgrZ29NYWtS+/clyKj1Z+pGxvckSx0D0cQyk0zoYCSYO
+        RoJhV3l/6jnkULDcUzHRl7yXUTe1YJBsccX8C2SKJSbYMrBHmQIpv5R8Zc0beS5LOBw/ZFpQLNGr9AFb
+        xtLEEgZl/bEDj6ZVxHP67R/4ePSXQTdZE0xYC8rris3QBT/0gddYZsKfJTzuZuGfGcQHXWuZCc6s6Js9
+        n8rXXoZ8oOOX9ewJfuzN3qu/ALwkZuvI05npom0OtcEy7N5RJbXBMlwc0GAwyGWa/gDwxocB4TA7VwAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="treeBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="treeBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 40</value>
+  </data>
+  <data name="treeBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 33</value>
+  </data>
+  <data name="treeBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;treeBtn.Name" xml:space="preserve">
     <value>treeBtn</value>
@@ -205,144 +229,6 @@
   </data>
   <data name="&gt;&gt;treeBtn.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnSelectGRP.Name" xml:space="preserve">
-    <value>btnSelectGRP</value>
-  </data>
-  <data name="&gt;&gt;btnSelectGRP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSelectGRP.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnSelectGRP.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ListButton.Name" xml:space="preserve">
-    <value>ListButton</value>
-  </data>
-  <data name="&gt;&gt;ListButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ListButton.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;ListButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;AnalysisButton.Name" xml:space="preserve">
-    <value>AnalysisButton</value>
-  </data>
-  <data name="&gt;&gt;AnalysisButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AnalysisButton.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;AnalysisButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 403</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnSelectGRP.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AMemTe8CHKcTz2W6WlAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnSelectGRP.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnSelectGRP.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAORJREFUWEft
-        mNENAiEYgxnBERzBERzFEdxAN9INdAPdRDfQ9oGEIBGao2pOmnwJgfL/JXcPx4WhOWkNDuBhgHVXoFkb
-        UCrUkxtYgKqWoFTAAQ9e1RbEDVfQdApBexDrc1yVvEHU/wVy++0NVL+9geq3N1D91Q2c2yWcQPRznK6R
-        XN0DxbVWcs0/EOdSziD6Oc7Xc3HuXf0XqRvcfnsD1W9voPrtDVS/vkHUCFTTpEBuRqAaciDHR76sNFDT
-        CdxKr0EXwHvaV8UAdxBDOWl+Ap+4ShPpleDPhiMoFerFT7yjQxMUwhOau5xL/JokNwAAAABJRU5ErkJg
-        gg==
-</value>
-  </data>
-  <data name="btnSelectGRP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 40</value>
-  </data>
-  <data name="btnSelectGRP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 29</value>
-  </data>
-  <data name="btnSelectGRP.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnSelectGRP.Name" xml:space="preserve">
-    <value>btnSelectGRP</value>
-  </data>
-  <data name="&gt;&gt;btnSelectGRP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSelectGRP.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnSelectGRP.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="ListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -431,7 +317,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;ListButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="AnalysisButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -498,7 +384,31 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;AnalysisButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 403</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txtPathLabel.Name" xml:space="preserve">
     <value>txtPathLabel</value>
@@ -534,7 +444,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="txtPathLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
@@ -1362,6 +1272,30 @@
   <data name="panel2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="&gt;&gt;treeSelectBtn.Name" xml:space="preserve">
+    <value>treeSelectBtn</value>
+  </data>
+  <data name="&gt;&gt;treeSelectBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;treeSelectBtn.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;treeSelectBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;grpTree.Name" xml:space="preserve">
+    <value>grpTree</value>
+  </data>
+  <data name="&gt;&gt;grpTree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpTree.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;grpTree.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1385,6 +1319,27 @@
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="grpTree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 4</value>
+  </data>
+  <data name="grpTree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 246</value>
+  </data>
+  <data name="grpTree.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;grpTree.Name" xml:space="preserve">
+    <value>grpTree</value>
+  </data>
+  <data name="&gt;&gt;grpTree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpTree.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;grpTree.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="fileSystemWatcher1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -1416,40 +1371,31 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="treeBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAFlSURBVFhH7ZZtTQUxEEVXAhKQgANwABJwAA5AAg7AATgAB+AAHIADuCd5k9w0Tbdvdzbsj57k
-        hKR9tLPT6cc0GOyUk8Pf3fAin+XmgV1IJvo9+CnvpE98JaP/nYateJIxUem3PJNwK73vQabDoD5JTYI6
-        lXAtvS/aU+DLffCWZDF4k7X21fRkx4162qyW/Et7pPADb09jdwEtXTIK2dvTWFrUvv3Jcio9WfqRsb3J
-        EsdA9HEMpNM6GAkmDkaCYVd5f+o55FCw3FMx0Ze8l1E3tWCQbHHF/AtkiiUm2DKwR5kCKb+UfGXNG3ku
-        SzgcP2RaUCzRq/QBW8bSxBIGZf2xA4+mVcRz+u0f+Hj0l0E3WRNMWAvK64rN0AU/9IHXWGbCnyU87mbh
-        nxnEB11rmQnOrOibPZ/K116GfKDjl/XsCX7szd6rvwC8JGbryNOZ6aJtDrXBMuzeUSW1wTJcHNBgMMhl
-        mv4A8MaHAeEwO1cAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="treeBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="treeSelectBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="treeBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 75</value>
+  <data name="treeSelectBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 215</value>
   </data>
-  <data name="treeBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 33</value>
+  <data name="treeSelectBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="treeBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="treeSelectBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;treeBtn.Name" xml:space="preserve">
-    <value>treeBtn</value>
+  <data name="treeSelectBtn.Text" xml:space="preserve">
+    <value>Select</value>
   </data>
-  <data name="&gt;&gt;treeBtn.Type" xml:space="preserve">
+  <data name="&gt;&gt;treeSelectBtn.Name" xml:space="preserve">
+    <value>treeSelectBtn</value>
+  </data>
+  <data name="&gt;&gt;treeSelectBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;treeBtn.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;treeSelectBtn.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;treeBtn.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;treeSelectBtn.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
 </root>

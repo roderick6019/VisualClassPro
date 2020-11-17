@@ -46,18 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnalysisFrame.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AnalysisFrame.Designer.cs">
-      <DependentUpon>AnalysisFrame.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GRPTree.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GRPTree.Designer.cs">
-      <DependentUpon>GRPTree.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainFrame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,9 +55,6 @@
     <Compile Include="CSVManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GRPTree.resx">
-      <DependentUpon>GRPTree.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainFrame.aa.resx">
       <DependentUpon>MainFrame.cs</DependentUpon>
     </EmbeddedResource>
