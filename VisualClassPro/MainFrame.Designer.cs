@@ -31,15 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.SummaryButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.treeBtn = new System.Windows.Forms.Button();
             this.ListButton = new System.Windows.Forms.Button();
             this.AnalysisButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtPathLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.treeSelectBtn = new System.Windows.Forms.Button();
             this.grpTree = new System.Windows.Forms.TreeView();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.treeSelectBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,20 +57,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel1.Controls.Add(this.treeBtn);
             this.panel1.Controls.Add(this.ListButton);
             this.panel1.Controls.Add(this.AnalysisButton);
             this.panel1.Controls.Add(this.SummaryButton);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // treeBtn
-            // 
-            resources.ApplyResources(this.treeBtn, "treeBtn");
-            this.treeBtn.FlatAppearance.BorderSize = 0;
-            this.treeBtn.Name = "treeBtn";
-            this.treeBtn.UseVisualStyleBackColor = true;
-            this.treeBtn.Click += new System.EventHandler(this.treeBtn_Click);
             // 
             // ListButton
             // 
@@ -114,6 +104,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // treeSelectBtn
+            // 
+            this.treeSelectBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.treeSelectBtn, "treeSelectBtn");
+            this.treeSelectBtn.Name = "treeSelectBtn";
+            this.treeSelectBtn.UseVisualStyleBackColor = true;
+            this.treeSelectBtn.Click += new System.EventHandler(this.treeSelectBtn_Click);
+            // 
             // grpTree
             // 
             this.grpTree.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -126,14 +124,6 @@
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // treeSelectBtn
-            // 
-            this.treeSelectBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.treeSelectBtn, "treeSelectBtn");
-            this.treeSelectBtn.Name = "treeSelectBtn";
-            this.treeSelectBtn.UseVisualStyleBackColor = true;
-            this.treeSelectBtn.Click += new System.EventHandler(this.treeSelectBtn_Click);
             // 
             // Main
             // 
@@ -162,7 +152,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Label txtPathLabel;
-        private System.Windows.Forms.Button treeBtn;
         private System.Windows.Forms.TreeView grpTree;
         private System.Windows.Forms.Button treeSelectBtn;
     }
