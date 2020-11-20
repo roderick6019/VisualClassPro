@@ -117,83 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SummaryButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="SummaryButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="SummaryButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="SummaryButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="SummaryButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 350</value>
-  </data>
-  <data name="SummaryButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 40</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SummaryButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;SummaryButton.Name" xml:space="preserve">
-    <value>SummaryButton</value>
-  </data>
-  <data name="&gt;&gt;SummaryButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SummaryButton.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;SummaryButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="ListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoCAYAAAB65WHVAAAABGdBTUEAALGPC/xhBQAADUdJREFUeF7t
@@ -256,6 +180,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACYh8MO+1+zBioGSga8XQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ListButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -266,8 +191,9 @@
     <value>3, 3</value>
   </data>
   <data name="ListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 31</value>
+    <value>37, 34</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ListButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -330,7 +256,7 @@
     <value>NoControl</value>
   </data>
   <data name="AnalysisButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 310</value>
+    <value>3, 40</value>
   </data>
   <data name="AnalysisButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 34</value>
@@ -1228,7 +1154,7 @@
     <value>Flat</value>
   </data>
   <data name="treeSelectBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 215</value>
+    <value>110, 213</value>
   </data>
   <data name="treeSelectBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -1252,7 +1178,7 @@
     <value>0</value>
   </data>
   <data name="grpTree.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 4</value>
+    <value>-1, 0</value>
   </data>
   <data name="grpTree.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 246</value>

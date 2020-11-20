@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.SummaryButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ListButton = new System.Windows.Forms.Button();
             this.AnalysisButton = new System.Windows.Forms.Button();
@@ -45,21 +44,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
-            // SummaryButton
-            // 
-            resources.ApplyResources(this.SummaryButton, "SummaryButton");
-            this.SummaryButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.SummaryButton.FlatAppearance.BorderSize = 0;
-            this.SummaryButton.Name = "SummaryButton";
-            this.SummaryButton.UseVisualStyleBackColor = false;
-            this.SummaryButton.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel1.Controls.Add(this.ListButton);
             this.panel1.Controls.Add(this.AnalysisButton);
-            this.panel1.Controls.Add(this.SummaryButton);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
@@ -143,8 +132,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button SummaryButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button ListButton;
         private System.Windows.Forms.Button AnalysisButton;
