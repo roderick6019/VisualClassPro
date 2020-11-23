@@ -50,7 +50,6 @@ namespace VisualClassPro
             grpTree.Hide();
             treeSelectBtn.Hide();
             ComputeSchoolAverageGPA();
-            Console.WriteLine(overallStdev);
             WriteToReport();
         }
         
@@ -368,7 +367,6 @@ namespace VisualClassPro
 
             temp /= (numList.Count);
             temp = Math.Sqrt(temp);
-            Console.WriteLine(temp);
             return Math.Round(temp, 3);
         }
 
