@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace VisualClassPro
 {
@@ -18,6 +19,7 @@ namespace VisualClassPro
         private double cumulativeGPA;
         private double overallStdev;
         private bool ifAllSection;
+        private string outputFileName;
 
         string path;
         List<string> checkedNodes;
@@ -40,6 +42,7 @@ namespace VisualClassPro
             sectionAverages = new Dictionary<string, double>();
             allSections = Directory.GetFiles(path, "*.csv").ToList();
             ifAllSection = false;
+            outputFileName = "Report.txt";
             InitializeComponent();
         }
 
@@ -50,7 +53,6 @@ namespace VisualClassPro
             grpTree.Hide();
             treeSelectBtn.Hide();
             ComputeSchoolAverageGPA();
-            WriteToReport();
         }
         
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -61,13 +63,17 @@ namespace VisualClassPro
         //once analysis button is clicked, analysis form will open 
         private void AnalysisButton_Click(object sender, EventArgs e)
         {
-            if (!(cumulativeGPA == 0) && filePath != string.Empty && grpFilePath != string.Empty)
+            if (filesToRead.Count != 0)
             {
-                //to be programmed
+                WriteToReport();
+                DialogResult dialogResult = MessageBox.Show("A report has been in " + path + ". Would you like to open the file now?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (dialogResult == DialogResult.Yes) {
+                    Process.Start(path + "\\" + outputFileName);
+                }
             }
             else
             {
-                MessageBox.Show("Please select a CSV file and GRP file to analyze", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please select a group file before printing out a report", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -400,7 +406,7 @@ namespace VisualClassPro
 
             double z_val = 0;
 
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(path, "Report.txt"))) {
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(path, outputFileName))) {
 
                 outputFile.WriteLine("School Stats:\nAverage School GPA: " + GetAllSectionsGPA() + "\nNumber of Courses: " + allSections.Count + "\nTotal Students: " + GetStudentCount(allSections) +"\nNumber of each grade:\n" + GetGradeCount(allSections));
                 outputFile.WriteLine("Section Stats:\nAverage GPA for " + GetCheckedNodes() + ": " + Math.Round(cumulativeGPA, 2) + "\nNumber of students: " + GetStudentCount(GetCSVFRomFileToRead()) +"\nNumber of each grade:\n" + GetGradeCount(GetCSVFRomFileToRead()));
