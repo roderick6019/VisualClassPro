@@ -238,7 +238,9 @@ namespace VisualClassPro
                 { "D+", 1.3},
                 { "D", 1.0},
                 { "D-", 0.7},
-                { "F", 0.0}};
+                { "F", 0.0},
+                { "W", 0.0},
+                { "I", 0.0}};
 
             foreach (string grade in grades){
 
